@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoListPageComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    console.log("start")
+   }
 
   ngOnInit(): void {
   }

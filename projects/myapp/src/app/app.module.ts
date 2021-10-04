@@ -7,8 +7,6 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { HeaderComponent } from './header/header.component';
 import { CommonModule}  from '@angular/common';
-//import  from '../common/';
-import { TodoModule } from '../todo/todo.module';
 
 
 @NgModule({
@@ -16,7 +14,7 @@ import { TodoModule } from '../todo/todo.module';
     AppComponent,
     HomePageComponent,
     AboutPageComponent,
-    HeaderComponent
+    HeaderComponent    
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
