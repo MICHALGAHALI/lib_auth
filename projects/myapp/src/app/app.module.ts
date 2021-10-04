@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { HeaderComponent } from './header/header.component';
-import { CommonModule } from '../common/common.module';
+import { CommonModule}  from '@angular/common';
+//import  from '../common/';
 import { TodoModule } from '../todo/todo.module';
 
 
@@ -18,7 +19,7 @@ import { TodoModule } from '../todo/todo.module';
     HeaderComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     CommonModule
   ],
