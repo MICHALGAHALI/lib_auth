@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { TodoListPageComponent } from './todo-list-page/todo-list-page.component';
 import {todoRoutingModule} from './todo-routing.module'
-
+import { CommonImportModule } from '../common-import/common-import.module';
 @NgModule({
   declarations: [
     TodoListPageComponent
   ],
   imports: [
-    CommonModule,
-    todoRoutingModule
-  ],
-  bootstrap:[TodoListPageComponent]
+    CommonImportModule,
+    todoRoutingModule,
+  ]
 })
-export class TodoModule { }
+export class TodoModule {
+ }
