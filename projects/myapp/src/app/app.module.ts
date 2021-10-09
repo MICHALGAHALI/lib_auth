@@ -10,6 +10,7 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 import { EntityDataModule,DefaultDataServiceConfig } from '@ngrx/data';
+import { userService } from './user.service';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { EntityDataModule,DefaultDataServiceConfig } from '@ngrx/data';
     }),
   ],
   providers: [
+    userService,
     {provide:DefaultDataServiceConfig,useValue:{root:'https://jsonplaceholder.typicode.com/'}}
   ],
   bootstrap: [AppComponent]
