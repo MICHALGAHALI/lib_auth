@@ -2,6 +2,15 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {     
+      "auth0-jwt": [
+        "dist/auth0-jwt/auth0-jwt",
+        "dist/auth0-jwt"
+      ],
+      "@yael/auth0-jwt": [
+        "projects/auth0-jwt/src/public-api.ts"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

@@ -11,7 +11,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 import { EntityDataModule,DefaultDataServiceConfig } from '@ngrx/data';
 import { userService } from './user.service';
-
+import {Auth0JwtModule} from 'auth0-jwt'
 
 @NgModule({
   declarations: [
@@ -33,6 +33,7 @@ import { userService } from './user.service';
       },
       //pluralNames:{'Task':'TODO'}
     }),
+    Auth0JwtModule
   ],
   providers: [
     userService,

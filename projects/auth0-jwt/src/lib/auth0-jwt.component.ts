@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-auth',
+  selector: 'lib-auth0-jwt',
   template: `
     <p>
-      auth works!
+      auth0-jwt works!
     </p>
   `,
   styles: [
   ]
 })
-export class AuthComponent implements OnInit {
+export class Auth0JwtComponent implements OnInit {
 
   constructor() { }
 
