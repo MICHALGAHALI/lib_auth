@@ -11,7 +11,9 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 import { EntityDataModule,DefaultDataServiceConfig } from '@ngrx/data';
 import { userService } from './user.service';
-import {Auth0JwtModule} from 'auth0-jwt'
+//import {Auth0JwtModule} from 'auth0-jwt'
+import {Auth0JwtModule} from '@yael/auth0-jwt';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import {Auth0JwtModule} from 'auth0-jwt'
       },
       //pluralNames:{'Task':'TODO'}
     }),
-    Auth0JwtModule
+    Auth0JwtModule,
+    BrowserAnimationsModule
   ],
   providers: [
     userService,

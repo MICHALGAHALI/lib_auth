@@ -3,7 +3,6 @@ import { User } from '../User.model';
 import { userService } from '../user.service';
 import {tap} from 'rxjs/operators'
 import { Observable } from 'rxjs';
-import {Auth0JwtComponent,Auth0JwtService} from 'auth0-jwt'
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',

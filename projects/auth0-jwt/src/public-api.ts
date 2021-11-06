@@ -3,5 +3,5 @@
  */
 
 export * from './lib/auth0-jwt.service';
-export * from './lib/auth0-jwt.component';
+export * from './lib/login.component';
 export * from './lib/auth0-jwt.module';

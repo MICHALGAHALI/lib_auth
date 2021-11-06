@@ -1,0 +1,13 @@
+ 
+      <form [formGroup]="sampleForm" >
+        <div>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>שם משתמש </mat-label>
+          <input matInput name="name" formControlName="name"  >
+          <mat-hint>הכנס שם משתמש</mat-hint>
+        </mat-form-field>
+        </div>
+        <app-password formControlName="pass" ></app-password>
+          
+        <button  mat-raised-button mat-button type="submit" [disabled]="(sampleForm.status == 'PENDING' ||sampleForm.status=='INVALID')"> שמור </button>
+      </form>  
