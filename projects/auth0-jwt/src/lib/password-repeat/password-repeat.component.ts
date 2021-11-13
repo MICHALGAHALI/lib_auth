@@ -1,5 +1,6 @@
 import { Component, forwardRef, OnInit } from "@angular/core";
 import { AbstractControl, ControlValueAccessor, FormBuilder, FormGroup, NG_VALIDATORS, NG_VALUE_ACCESSOR, ValidationErrors, Validator, Validators } from "@angular/forms";
+import { repeatPassword } from "../custom-validation/repeatPassword";
 
 @Component ({
     selector:'app-password',
@@ -27,6 +28,8 @@ export class passwordRepeatComponent implements Validator, ControlValueAccessor,
         this.password=_formBuilder.group({
             password: ['',[Validators.required, Validators.minLength(5)]],
             repeat:  ['',[Validators.required, Validators.minLength(5)]]  
+          }, {
+            validators: [repeatPassword]
           });
        
     }
